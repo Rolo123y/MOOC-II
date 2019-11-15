@@ -1,0 +1,58 @@
+package week8;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class main09 {
+
+	// public static void main(String[] args) {
+	// RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
+	// RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
+	// RegistrationPlate reg3 = new RegistrationPlate("D", "B WQ-431");
+	//
+	// ArrayList<RegistrationPlate> finnish = new ArrayList<>();
+	// finnish.add(reg1);
+	// finnish.add(reg2);
+	//
+	// if (!finnish.contains(new RegistrationPlate("FI", "ABC-123"))) {
+	// finnish.add(new RegistrationPlate("FI", "ABC-123"));
+	// }
+	// System.out.println("Finnish: " + finnish);
+	//
+	// HashMap<RegistrationPlate, String> owners = new HashMap<>();
+	// owners.put(reg1, "Arto");
+	// owners.put(reg3, "Jurgen");
+	//
+	// System.out.println("owners: ");
+	// System.out.println(owners.get(new RegistrationPlate("FI", "ABC-123")));
+	// System.out.println(owners.get(new RegistrationPlate("D", "B WQ-431")));
+	// }
+
+	public static void main(String[] args) {
+		RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
+		RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
+		RegistrationPlate reg3 = new RegistrationPlate("D", "B WQ-431");
+		RegistrationPlate reg4 = new RegistrationPlate("D", "B WQ-431");
+
+		VehicleRegister register = new VehicleRegister();
+
+		register.add(reg1, "ruh");
+		register.add(reg2, "nas");
+		register.add(reg3, "qwe");
+		register.add(reg4,null);
+
+		register.printRegistrationPlates();
+		register.printOwners();
+
+		String get = register.get(reg1);
+		System.out.println("\nGet Method: " + get);
+
+		boolean added = register.add(reg1, "rah");
+		System.out.println(added);
+		
+//		boolean deleted = register.delete(reg4);
+//		System.out.println(deleted);
+		
+		register.printOwners();
+	}
+}

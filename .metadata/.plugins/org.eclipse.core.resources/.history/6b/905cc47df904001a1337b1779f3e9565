@@ -1,0 +1,21 @@
+package week8;
+
+public class MilitaryService implements NationalService {
+
+	private CivilService daysLeft;
+
+	public MilitaryService() {
+		this.daysLeft = new CivilService();
+	}
+
+	@Override
+	public int getDaysLeft() {
+		return daysLeft.getDaysLeft();
+	}
+
+	@Override
+	public void work() {
+		this.daysLeft.work();
+	}
+
+}

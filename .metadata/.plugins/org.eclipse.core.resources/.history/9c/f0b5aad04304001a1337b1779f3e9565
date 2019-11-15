@@ -1,0 +1,25 @@
+package week8;
+
+import java.util.ArrayList;
+
+public class main09 {
+
+	public static void main(String[] args) {
+		RegistrationPlate reg1 = new RegistrationPlate("FI", "ABC-123");
+		RegistrationPlate reg2 = new RegistrationPlate("FI", "UXE-465");
+		RegistrationPlate reg3 = new RegistrationPlate("D", "B WQ-431");
+
+		ArrayList<RegistrationPlate> finnish = new ArrayList<>();
+		finnish.add(reg1);
+		finnish.add(reg2);
+
+		RegistrationPlate new1 = new RegistrationPlate("FI", "ABC-123");
+
+		if (!finnish.contains(new1)) {
+			finnish.add(new1);
+		}
+		System.out.println("Finnish: " + finnish);
+
+	}
+
+}

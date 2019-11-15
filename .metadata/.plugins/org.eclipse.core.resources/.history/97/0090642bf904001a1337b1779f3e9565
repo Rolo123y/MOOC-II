@@ -1,0 +1,7 @@
+package week8;
+
+public class MilitaryService implements NationalService{
+
+	
+	
+}

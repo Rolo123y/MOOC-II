@@ -1,0 +1,17 @@
+package week8;
+
+import java.util.HashMap;
+
+public class VehicleRegister {
+
+	private HashMap<RegistrationPlate, String> Owners;
+
+	public VehicleRegister() {
+		this.Owners = new HashMap<RegistrationPlate, String>();
+	}
+
+	public boolean add(RegistrationPlate plate, String owner) {
+
+	}
+
+}
