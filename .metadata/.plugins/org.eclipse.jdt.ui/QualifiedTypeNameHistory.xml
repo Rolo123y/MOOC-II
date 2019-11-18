@@ -13,10 +13,11 @@
 <fullyQualifiedTypeName name="week7.Airport"/>
 <fullyQualifiedTypeName name="week7.Flights"/>
 <fullyQualifiedTypeName name="week7.Plane"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="week8.VehicleRegister"/>
 <fullyQualifiedTypeName name="week8.RegistrationPlate"/>
 <fullyQualifiedTypeName name="week8.NationalService"/>
 <fullyQualifiedTypeName name="week8.CivilService"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="week8.toBeStored"/>
 </qualifiedTypeNameHistroy>

@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:main01,org.eclipse.launchbar.core.descriptorType.default\:main03,org.eclipse.launchbar.core.descriptorType.default\:main01 (1),org.eclipse.launchbar.core.descriptorType.default\:main02,org.eclipse.launchbar.core.descriptorType.default\:main04,org.eclipse.launchbar.core.descriptorType.default\:main05,org.eclipse.launchbar.core.descriptorType.default\:main06,org.eclipse.launchbar.core.descriptorType.default\:main07,org.eclipse.launchbar.core.descriptorType.default\:main08,org.eclipse.launchbar.core.descriptorType.default\:main09
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:main01,org.eclipse.launchbar.core.descriptorType.default\:main03,org.eclipse.launchbar.core.descriptorType.default\:main01 (1),org.eclipse.launchbar.core.descriptorType.default\:main02,org.eclipse.launchbar.core.descriptorType.default\:main04,org.eclipse.launchbar.core.descriptorType.default\:main05,org.eclipse.launchbar.core.descriptorType.default\:main06,org.eclipse.launchbar.core.descriptorType.default\:main07,org.eclipse.launchbar.core.descriptorType.default\:main08,org.eclipse.launchbar.core.descriptorType.default\:main09,org.eclipse.launchbar.core.descriptorType.default\:main11
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:main01\ (1)/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:main01\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

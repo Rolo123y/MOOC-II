@@ -1,0 +1,32 @@
+package week8;
+
+import java.util.ArrayList;
+
+public class Box implements toBeStored {
+	private ArrayList<Object> list;
+	private double maxWeight;
+	private double currentWeight;
+
+	public Box(double maxWeight) {
+		this.maxWeight = maxWeight;
+		this.list = new ArrayList<>();
+		this.currentWeight = 0;
+	}
+
+	public void add(toBeStored toBeStored) {
+		double nextWeight = this.currentWeight + toBeStored.weight();
+		if (nextWeight > this.maxWeight) {
+			return;
+		}
+		list.add(toBeStored);
+		currentWeight += toBeStored.weight();
+	}
+
+	public double weight() {
+		return this.currentWeight;
+	}
+
+	public String toString() {
+		return "Box: " + this.list.size() + " things, total weight " + this.currentWeight + " kg";
+	}
+}
