@@ -11,6 +11,11 @@
 	<classpathentry kind="src" path="09.CarRegistrationCentre"/>
 	<classpathentry kind="src" path="10.NationalService"/>
 	<classpathentry kind="src" path="11.BoxesAndThings"/>
+	<classpathentry kind="src" path="12.OnlineShop"/>
+	<classpathentry kind="src" path="13.RichFirst,PoorLast"/>
+	<classpathentry kind="src" path="14.StudentsSortedbyName"/>
+	<classpathentry kind="src" path="15.SortingCards"/>
+	<classpathentry kind="src" path="16.SkiJumping"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
