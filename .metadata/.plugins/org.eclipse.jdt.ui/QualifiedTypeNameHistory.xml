@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="java.lang.Process"/>
 <fullyQualifiedTypeName name="week7.PromissoryNote"/>
 <fullyQualifiedTypeName name="week7.main07"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="week7.Dictionary"/>
 <fullyQualifiedTypeName name="week7.TextUserInterface"/>
@@ -17,7 +16,6 @@
 <fullyQualifiedTypeName name="week8.RegistrationPlate"/>
 <fullyQualifiedTypeName name="week8.NationalService"/>
 <fullyQualifiedTypeName name="week8.CivilService"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="week8.toBeStored"/>
 <fullyQualifiedTypeName name="week8.Storehouse"/>
 <fullyQualifiedTypeName name="java.awt.RenderingHints.Key"/>
@@ -27,4 +25,12 @@
 <fullyQualifiedTypeName name="week8.ShoppingBasket"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="week8.Purchase"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="week8.Student"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
