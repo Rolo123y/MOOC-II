@@ -1,4 +1,4 @@
-package application;
+package week9.application;
 
 import java.util.Random;
 

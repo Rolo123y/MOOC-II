@@ -1,4 +1,4 @@
-package wordinspection;
+package week9.wordinspection;
 
 import java.io.File;
 import java.io.FileNotFoundException;
