@@ -9,46 +9,39 @@ import java.util.Map;
 
 public class PhoneBook {
 
-	private List<Person> ListOfContacts;
-	// private Map<String, Person> ListOfContacts2;
+	private Map<String, Person> ListOfContacts2;
 
 	public PhoneBook() {
-		this.ListOfContacts = new ArrayList<Person>();
+		this.ListOfContacts2 = new HashMap<>();
 	}
 
 	// 1
 	public void addPerson(String fName, String number) {
-		boolean contactFound = false;
-		for (Person n : ListOfContacts) {
-			if (n.getfName().equals(fName)) {
-				n.addPhoneNumber(number);
-				contactFound = true;
-			}
-		}
-		if (contactFound == false) {
+		if (ListOfContacts2.containsKey(fName)) {
+			ListOfContacts2.get(fName).addPhoneNumber(number);
+		} else {
 			Person person = new Person(fName);
 			person.addPhoneNumber(number);
-			ListOfContacts.add(person);
+			ListOfContacts2.put(person.getfName(), person);
 		}
 	}
 
 	// 2
 	public void searchForNumbers(String fName) {
-		boolean contactFound = false;
-		for (Person n : ListOfContacts) {
-			if (n.getfName().equals(fName)) {
-				n.printPhoneNumbers();
-				contactFound = true;
+		if (ListOfContacts2.containsKey(fName)) {
+			for (Person n : ListOfContacts2.values()) {
+				if (n.getfName().equals(fName)) {
+					n.printPhoneNumbers();
+				}
 			}
-		}
-		if (contactFound == false) {
+		} else {
 			System.out.println("  not found");
 		}
 	}
 
 	// 3
 	public String searchByNumber(String number) {
-		for (Person n : ListOfContacts) {
+		for (Person n : ListOfContacts2.values()) {
 			for (String a : n.getPhoneNumbers()) {
 				if (a.equals(number)) {
 					return n.getfName();
@@ -60,44 +53,40 @@ public class PhoneBook {
 
 	// 4
 	public void addAddress(String fName, String city, String street) {
-		boolean contactFound = false;
-		for (Person n : ListOfContacts) {
-			if (n.getfName().equals(fName)) {
-				n.addAddress(city, street);
-				contactFound = true;
+		if (ListOfContacts2.containsKey(fName)) {
+			for (String n : ListOfContacts2.keySet()) {
+				if (n.equals(fName)) {
+					ListOfContacts2.get(n).addAddress(city, street);
+				}
 			}
-		}
-		if (contactFound == false) {
+		} else {
 			Person person = new Person(fName);
 			person.addAddress(city, street);
-			ListOfContacts.add(person);
+			ListOfContacts2.put(person.getfName(), person);
 		}
 	}
 
 	// 5
 	public void searchPersonalInformation(String fName) {
-		boolean contactFound = false;
-		for (Person n : ListOfContacts) {
-			if (n.getfName().equals(fName)) {
-				n.printAddresses();
-				System.out.println("  phone numbers:");
-				n.printPhoneNumbers();
-				contactFound = true;
+		if (ListOfContacts2.containsKey(fName)) {
+			for (String n : ListOfContacts2.keySet()) {
+				if (n.equals(fName)) {
+					ListOfContacts2.get(n).printAddresses();
+					System.out.println("  phone numbers:");
+					ListOfContacts2.get(n).printPhoneNumbers();
+				}
 			}
-		}
-		if (contactFound == false) {
+		} else {
 			System.out.println("  not found");
 		}
 	}
 
 	// 6
 	public void deletePersonalInformation(String fName) {
-		Iterator<Person> itr = ListOfContacts.iterator();
+		Iterator<Map.Entry<String, Person>> itr = ListOfContacts2.entrySet().iterator();
 		while (itr.hasNext()) {
-			Person person = itr.next();
-			if (person.getfName().equals(fName)) {
-				person.getPhoneNumbers().clear();
-				person.getAddresses().clear();
+			Map.Entry<String, Person> entry = itr.next();
+			if (entry.getKey().equals(fName)) {
 				itr.remove();
 			}
 		}
@@ -107,14 +96,14 @@ public class PhoneBook {
 	public void filteredListing(String keyword) {
 		ArrayList<Person> sorted = new ArrayList<Person>();
 		if (keyword.isEmpty() == true) {
-			for (Person n : ListOfContacts) {
+			for (Person n : ListOfContacts2.values()) {
 				sorted.add(n);
 			}
 			sortAndPrint(sorted);
 		} else {
-			for (Person n : ListOfContacts) {
-				if (n.getfName().contains(keyword)) {
-					sorted.add(n);
+			for (String n : ListOfContacts2.keySet()) {
+				if (n.contains(keyword)) {
+					sorted.add(ListOfContacts2.get(n));
 				}
 			}
 			sortAndPrint(sorted);
